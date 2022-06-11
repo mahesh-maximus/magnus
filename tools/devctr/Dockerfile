@@ -11,14 +11,14 @@ RUN apt-get update \
         git \
         curl \
         python3 \
-        python3-pip \
-        && python3 -m pip install -U watchdog
+        python3-pip
 
 # We need to install node and npm from source because of this issue with the
 # ubuntu repository:
 # https://bugs.launchpad.net/ubuntu/+source/nodejs/+bug/1794589
 RUN (curl -sL https://deb.nodesource.com/setup_17.x | bash) \
     && apt-get install -y nodejs \
+    && npm install -g npm@8.12.1 \
     && npm install --global yarn \
     && rm -rf /var/lib/apt/lists/*
 
