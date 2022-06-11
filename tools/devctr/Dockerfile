@@ -19,7 +19,6 @@ RUN apt-get update \
 RUN (curl -sL https://deb.nodesource.com/setup_17.x | bash) \
     && apt-get install -y nodejs \
     && npm install -g npm@8.12.1 \
-    && npm install --global yarn \
     && rm -rf /var/lib/apt/lists/*
 
 # Add the tini init binary.

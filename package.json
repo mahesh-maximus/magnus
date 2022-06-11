@@ -1,0 +1,30 @@
+{
+  "name": "magnus",
+  "version": "1.0.0",
+  "description": "Magnus is a development server that provides live reloading. This should be used for development only.",
+  "main": "index.js",
+  "scripts": {
+    "pwd": "pwd",
+    "startm": "cd packages",
+    "testm": "pwd",
+    "serve": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahesh-maximus/magnus.git"
+  },
+  "keywords": [
+    "live",
+    "reloading"
+  ],
+  "author": "Mahesh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahesh-maximus/magnus/issues"
+  },
+  "homepage": "https://github.com/mahesh-maximus/magnus#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.2"
+  }
+}
