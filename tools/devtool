@@ -360,7 +360,7 @@ cmd_remove_node_modules() {
     say "Are you sure you want delete all the node modules in: $MG_ROOT_DIR/felix"
     get_user_confirmation || die "Aborted."
 
-    cd "$MG_ROOT_DIR/felix"
+    cd "$MG_ROOT_DIR"
     sudo find -name "node_modules" -exec rm -rf {} +
 }
 
